@@ -306,7 +306,7 @@ class Shapeoko2(object):
 
     # Z-axis cutting distance constants (in mm)
     DEF_Z_DISTANCE = 10.0
-    MIN_Z_DISTANCE = 10.0
+    MIN_Z_DISTANCE = 5.0
     MAX_Z_DISTANCE = 100.0
 
     # Movement (non-cutting) speed in all axes
@@ -327,8 +327,8 @@ class TestParams(Shapeoko2):
     """
     Encapsulates the parameters for the given tests on a specific machine type.
     """
-    # width of laser cut (in mm)
-    KERF = .2
+    # width of laser cut (in mm) for J-Tech 3.8W 445nm laser
+    KERF = .38
 
     # Min/max distance between individual test lines in X (in mm)
     MIN_X_SPACING = 1.0
